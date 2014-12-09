@@ -83,7 +83,6 @@ module OneLogin
         if settings.name_identifier_format != nil
           root.add_element "samlp:NameIDPolicy", {
               # Might want to make AllowCreate a setting?
-              "AllowCreate" => "true",
               "Format" => settings.name_identifier_format
           }
         end
